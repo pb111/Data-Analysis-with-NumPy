@@ -2,6 +2,8 @@
 Data Analysis with NumPy
 
 
+## Table of Contents
+
 1.	Introduction to NumPy
 2.	Key features of NumPy
 3.	Advantages of NumPy
