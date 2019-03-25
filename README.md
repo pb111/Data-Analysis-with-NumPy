@@ -1,6 +1,7 @@
 # Data-Analysis-with-NumPy
 
-NumPy
+
+NumPy is the fundamental library of Python which is required for scientific computing. In this project, I will explore NumPy and various data analysis tools of NumPy.
 
 
 ## Table of Contents
