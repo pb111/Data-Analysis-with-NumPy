@@ -70,11 +70,12 @@ The ancestor of NumPy was Numeric. It was originally created by Jim Hugunin with
 NumPy is the subject matter of this project. I will discuss NumPy and various data analysis tools associated with NumPy.
 
 
-
-
+================================================================================
 
 
 ## 2. Key features of NumPy
+
+
 The key features of NumPy are as follows:-
 1.	NumPy is designed for scientific computation with Python.
 2.	NumPy provides tools for array oriented computing.
@@ -84,7 +85,7 @@ The key features of NumPy are as follows:-
 6.	The elements in a NumPy array are all required to be of the same data type.
 
 
-
+================================================================================
 
 
 ## 3. Advantages of NumPy
@@ -96,8 +97,7 @@ The key features of NumPy are as follows:-
 5.	A large number of Python packages uses NumPy arrays. These support Python-sequence inputs. They convert such input to NumPy arrays prior to processing, and they often output NumPy arrays.
 
 
-
-
+================================================================================
 
 
 ## 4. Importing NumPy
@@ -110,12 +110,17 @@ Also, I will import Pandas as well which is the open source library for data ana
 `import pandas as pd`
 
 
+================================================================================
+
+
 ## 5. Importing data
 In this project, I work with the **Forest Fires Data Set** which is a comma-separated values (CSV) file type. In a CSV file type, the data is stored as a comma-separated values where each row is separated by a new line, and each column by a comma (,).
 I use the **pandas read_csv()** function to import the data set as follows:-
 `data = 'C:/datasets/forestfires.csv`
 `df = pd.read_csv(data)`
 
+
+================================================================================
 
 
 ## 6. Dataset description
@@ -145,7 +150,7 @@ https://archive.ics.uci.edu/ml/datasets/Forest+Fires
 In this project, I will analyze this dataset using NumPy, which is a commonly used Python data analysis package.
 
 
-
+================================================================================
 
 
 ## 7. NumPy ndarray object
@@ -206,12 +211,7 @@ Now, I will illustrate the concept better with the following examples:-
 `np.array([1, 2, 3], dtype = complex)`
 
 
-
-
-
-
-
-
+================================================================================
 
 
 ## 8. NumPy data types
@@ -349,6 +349,8 @@ The following example define a structured data type called student with a string
 `print(a2)`
 
 
+================================================================================
+
 
 ## 9. NumPy array attributes
 
@@ -436,12 +438,7 @@ It represents an object describing the type of the elements in the array. We can
 We can check the type of the array with the `type()` function.
 
 
-
-
-
-
-
-
+================================================================================
 
 
 ## 10. NumPy array creation 
@@ -518,8 +515,7 @@ arange function with float arguments
 When **arange** function is used with floating point arguments, it is not possible to predict the number of elements obtained, due to the finite floating point precision. So, it is better to use the **linspace** function that accepts the number of elements argument that we want, instead of the step.
 
 
-
-
+================================================================================
 
 
 ## 11. NumPy array from existing data
@@ -631,6 +627,7 @@ The constructor takes the following parameters.
 - count - The number of items to be read from iterator. Default is -1 which means all data to be read.
 
 
+================================================================================
 
 
 ## 12. Numpy array from numerical ranges
@@ -739,9 +736,10 @@ The description of the parameters is as follows:-
 - dtype - Data type of output array. If not given, it depends upon other input arguments
 
 
+================================================================================
 
 
-## 14. NumPy array manipulation
+## 13. NumPy array manipulation
 
 
 
@@ -851,8 +849,11 @@ NumPy package provides several routines for manipulation of elements in ndarray 
 - **unique** - finds the unique elements of an array
 
 
+================================================================================
 
-## 15. NumPy indexing and slicing
+
+## 14. NumPy indexing and slicing
+
 
 In NumPy, the elements of ndarray object can be accessed and modified by indexing or slicing, just like in Python. The items in ndarray object follows zero-based index. 
 
@@ -866,8 +867,6 @@ Three types of indexing methods are available −
 
 
 - 3. **advanced indexing**
-
-
 
 
 ### Basic slicing
@@ -941,10 +940,10 @@ slice all items from column 1 onwards
 `print(x20[...,1:])`
 
 
+================================================================================
 
 
-## 16. NumPy broadcasting
-
+## 15. NumPy broadcasting
 
 
 In NumPy, **broadcasting** refers to the ability of NumPy to treat arrays of different shapes during arithmetic operations. Arithmetic operations on arrays are usually done on corresponding elements. If two arrays are of exactly the same shape, then these operations are smoothly performed.
@@ -954,10 +953,7 @@ However, if the dimensions of two arrays are dissimilar, element-to-element oper
 of different shapes is still possible in NumPy, because of the broadcasting capability. The smaller array is broadcast to the size of the larger array so that they have compatible shapes.
 
 
-
-
 ### Rules of broadcasting
-
 
 
 Rules of broadcasting are as follows:- 
@@ -995,9 +991,10 @@ A set of arrays is said to be broadcastable if the above rules produce a valid r
 - 3. Array having too few dimensions can have its shape prepended with a dimension of length 1, so that the above stated property is true.
 
 
+================================================================================
 
-## 17. NumPy - Binary Operators
 
+## 16. NumPy - Binary Operators
 
 
 There are several functions available for bitwise operations in NumPy package. These are as follows:-
@@ -1019,10 +1016,10 @@ There are several functions available for bitwise operations in NumPy package. T
 - **right_shift** - Shifts bits of binary representation to the right
 
 
+================================================================================
 
 
-## 18.	NumPy string functions
-
+## 17.	NumPy string functions
 
 
 The following functions are used to perform vectorized string operations for arrays of dtype numpy.string_ or numpy.unicode_. They are based on the standard string functions in Python's built-in library.
@@ -1069,6 +1066,8 @@ The following functions are used to perform vectorized string operations for arr
 
 - **encode()** - Calls str.encode element-wise
 
+
+================================================================================
 
 
 ## 18. NumPy arithmetic operations
@@ -1142,8 +1141,11 @@ The following functions are used to perform operations on array with complex num
 - **numpy.angle()** − returns the angle of the complex argument. The function has degree parameter. If true, the angle in the degree is returned, otherwise the angle is in radians.
 
 
+================================================================================
+
 
 ## 19. NumPy - Statistical Functions
+
 
 NumPy has various useful statistical functions for finding minimum, maximum, percentile, standard deviation and variance, from the given elements in the array. 
 
@@ -1337,9 +1339,7 @@ Standard deviation is the square root of the variance.
 `print(np.std(i5))`
 
 
-
-
-
+================================================================================
 
 
 ## 20. NumPy Sorting
@@ -1388,11 +1388,7 @@ The **argsort()** function performs an indirect sort on input array, along the g
 The **lexsort()** function performs an indirect sort using a sequence of keys. The keys can be seen as a column in a spreadsheet. The function returns an array of indices, using which the sorted data can be obtained. The last key happens to be the primary key of sort.
 
 
-
-
-
-
-
+================================================================================
 
 
 ## 21. NumPy Searching
@@ -1402,10 +1398,6 @@ NumPy package has a number of functions for searching inside an array. These fun
 ### numpy.argmax() and numpy.argmin()
 
 These two functions return the indices of maximum and minimum elements respectively along the given axis.
-
-
-
-
 
 
 ### numpy.nonzero()
@@ -1423,9 +1415,7 @@ The **where()** function returns the indices of elements in an input array where
 The **extract()** function returns the elements satisfying any condition.	
 
 
-
-
-
+================================================================================
 
 
 ## 22. NumPy Copies and Views
@@ -1455,7 +1445,7 @@ NumPy has a **ndarray.view()** method which is a new array object that looks at 
 The **copy()** function creates a deep copy. It is a complete copy of the array and its data, and doesn't share with the original array.
 
 
-
+================================================================================
 
 
 ## 23. Input Output with NumPy
@@ -1493,16 +1483,11 @@ The storage and retrieval of array data in simple text file format is done with 
 The **savetxt()** and **loadtxt()** functions accept additional optional parameters such as header, footer, and delimiter.
 
 
-
-
-
-
-
-
-
+================================================================================
 
 
 ## 24. Random sampling with NumPy
+
 
 NumPy provides `random` module for doing random sampling. This `random` module contains many useful functions for generation of random numbers. 
 
