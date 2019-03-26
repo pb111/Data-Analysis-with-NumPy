@@ -58,7 +58,7 @@ The table of contents for this project is as follows:-
 24.	Random sampling with NumPy
 
 
-============================================================================
+================================================================================
 
 
 ## 1. Introduction to NumPy
